@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>পায়ে পায়ে</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FavIcon -->
+    <link rel="icon" href="images/favicon-16x16.png" type="images/FavIcon" sizes="16x16">
+</head>
+<body>
+    <header class="bg-success fixed-top">
+        <!-- Navbar -->
+        <div class="nav-bg w-100">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div>
+                    <nav class="navbar navbar-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="index.html">
+                                <img class="w-25" src="images/android-chrome-192x192.png" >   
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+    
+                <!-- Menu Bar-->
+                <div >
+                    <nav class="navbar navbar-expand-lg navbar-dark p-3">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">About Us</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Categories
+                                        </a>
+                                        <ul class="dropdown-menu nav-bg" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#males">Male's Collections</a></li>
+                                            <li><a class="dropdown-item" href="#females">Female's Collections</a></li>
+                                            <li><a class="dropdown-item" href="#kids">Kid's Collections</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item text-dark" href="#">See More →</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact</a>
+                                    </li>                      
+                                </ul>                        
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Banner Section -->
+    <section class="banner pt-5 align-items-center" id="about">
+        <div class="container p-5 ">
+            <div class="row d-flex align-items-center g-5 banner">
+                <div class="col-lg-6 order-lg-1 order-sm-2">
+                    <img class="w-100 p-5" src="images/banner.png">
+                </div>
+                <div class="col-lg-6 order-lg-1 order-sm-2">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <img src="images/banner-1.png" class="d-block w-100 p-5" alt="...">
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="images/shoes-2.png" class="d-block w-100 p-5" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/banner-3.png" class="d-block w-100 p-5" alt="...">
+                            </div>  
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- Male's Section -->
+        <div>
+            <h1 id="males" class="text-center mt-5"><span >Male's </span> Collections</h1>
+            <div class="rectangle rounded"></div>
+        
+            <!-- Casual Section -->
+            <section class="container pt-5">
+                <h2 class="text-uppercase">Casual Shoes</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ps-5">
+                    <div class="col rounded">
+                        <div class="card border-0 h-100 rounded p-2">
+                            <div class="p-2 rounded">
+                                <img src="images/c-shoes-1.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Sneakers Basketball shoe</h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-3">
+                                <button class="rounded" aria-current="false"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-purchase"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal-purchase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModal-purchase" aria-hidden="true">
+                                    <div class="modal-dialog overflow: hidden">
+                                      <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Please contact</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p class="text-center"><strong>Cell No: </strong> <u>+8801000000001</u></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thank you !</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rounded">
+                        <div class="card border-0 h-100 rounded p-2">
+                            <div class="p-2 rounded">
+                                <img src="images/c-shoes-2.png" class="card-img-top">
+                            </div> 
+                            <div class="card-body">
+                                <h5 class="card-title">Nike Shoe</h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-3">
+                                <button class="rounded" aria-current="false"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-purchase"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal-purchase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModal-purchase" aria-hidden="true">
+                                    <div class="modal-dialog overflow:hidden">
+                                      <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Please contact</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p class="text-center"><strong>Cell No: </strong> <u>+8801000000001</u></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thank you !</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rounded">
+                        <div class="card border-0 h-100 rounded p-2">
+                            <div class="p-2 rounded">
+                                <img src="images/c-shoes-3.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Sneakers Skate Shoe </h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-3">
+                                <button class="rounded" aria-current="false"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-purchase"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal-purchase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModal-purchase" aria-hidden="true">
+                                    <div class="modal-dialog overflow: hidden">
+                                      <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Please contact</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p class="text-center"><strong>Cell No: </strong> <u>+8801000000001</u></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thank you !</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- Formal Section -->
+            <section class="container pt-5">
+                <h2 class="text-uppercase">Formal Shoes</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ps-5">
+                    <div class="col rounded">
+                        <div class="card border-0 h-100 rounded p-2">
+                            <div class="p-2 rounded">
+                                <img src="images/f-shoes-1.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Sneakers Basketball shoe</h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-3">
+                                <button class="rounded" aria-current="false"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-purchase"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal-purchase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModal-purchase" aria-hidden="true">
+                                    <div class="modal-dialog overflow:hidden">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Please contact</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p class="text-center"><strong>Cell No: </strong> <u>+8801000000001</u></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thank you !</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rounded">
+                        <div class="card border-0 h-100 rounded p-2">
+                            <div class="p-2 rounded">
+                                <img src="images/f-shoes-2.png" class="card-img-top">
+                            </div> 
+                            <div class="card-body">
+                                <h5 class="card-title">Nike Shoe</h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-3">
+                                <button class="rounded" aria-current="false"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-purchase"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal-purchase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModal-purchase" aria-hidden="true">
+                                    <div class="modal-dialog overflow: hidden">
+                                      <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Please contact</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p class="text-center"><strong>Cell No: </strong> <u>+8801000000001</u></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thank you !</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rounded">
+                        <div class="card border-0 h-100 rounded p-2">
+                            <div class="p-2 rounded">
+                                <img src="images/f-shoes-3.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Sneakers Skate Shoe </h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-3">
+                                <button class="rounded" aria-current="false"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-purchase"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal-purchase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModal-purchase" aria-hidden="true">
+                                    <div class="modal-dialog overflow: hidden">
+                                      <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Please contact</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p class="text-center"><strong>Cell No: </strong> <u>+8801000000001</u></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thank you !</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+
+        <!-- Female's Section -->
+        <div id="females">
+            <h1  class="text-center mt-5"><span >Female's </span> Collections</h1>
+            <div class="rectangle rounded"></div>
+            <section class="container pt-5">
+                <h2 class="text-uppercase">Formal Shoes</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ps-5">
+                    <div class="col rounded">
+                        <div class="card border-0 h-100 rounded p-2">
+                            <div class="p-2 rounded">
+                                <img src="images/shoes-1.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Sneakers Basketball shoe</h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-3">
+                                <button class="rounded" aria-current="false"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-purchase"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal-purchase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModal-purchase" aria-hidden="true">
+                                    <div class="modal-dialog overflow: hidden">
+                                      <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Please contact</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p class="text-center"><strong>Cell No: </strong> <u>+8801000000001</u></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thank you !</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rounded">
+                        <div class="card border-0 h-100 rounded p-2">
+                            <div class="p-2 rounded">
+                                <img src="images/shoes-2.png" class="card-img-top">
+                            </div> 
+                            <div class="card-body">
+                                <h5 class="card-title">Nike Shoe</h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-3">
+                                <button class="rounded" aria-current="false"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-purchase"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal-purchase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModal-purchase" aria-hidden="true">
+                                    <div class="modal-dialog overflow: hidden">
+                                      <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Please contact</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p class="text-center"><strong>Cell No: </strong> <u>+8801000000001</u></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thank you !</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rounded">
+                        <div class="card border-0 h-100 rounded p-2">
+                            <div class="p-2 rounded">
+                                <img src="images/shoes-4.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Sneakers Skate Shoe </h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-3">
+                                <button class="rounded" aria-current="false"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-purchase"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal-purchase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModal-purchase" aria-hidden="true">
+                                    <div class="modal-dialog overflow: hidden">
+                                      <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Please contact</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p class="text-center"><strong>Cell No: </strong> <u>+8801000000001</u></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thank you !</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+
+        <!-- Kid's Collection -->
+        <div id="kids">
+            <h1  class="text-center mt-5"><span >Kid's </span> Collections</h1>
+            <div class="rectangle rounded"></div>
+            <section class="container pt-5">
+                <h2 class="text-uppercase">Formal Shoes</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ps-5">
+                    <div class="col rounded">
+                        <div class="card border-0 h-100 rounded p-2">
+                            <div class="p-2 rounded">
+                                <img src="images/shoes-1.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Sneakers Basketball shoe</h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-3">
+                                <button class="rounded" aria-current="false"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-purchase"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal-purchase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModal-purchase" aria-hidden="true">
+                                    <div class="modal-dialog overflow: hidden">
+                                      <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Please contact</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p class="text-center"><strong>Cell No: </strong> <u>+8801000000001</u></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thank you !</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rounded">
+                        <div class="card border-0 h-100 rounded p-2">
+                            <div class="p-2 rounded">
+                                <img src="images/shoes-2.png" class="card-img-top">
+                            </div> 
+                            <div class="card-body">
+                                <h5 class="card-title">Nike Shoe</h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-3">
+                                <button class="rounded" aria-current="false"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-purchase"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal-purchase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModal-purchase" aria-hidden="true">
+                                    <div class="modal-dialog overflow: hidden">
+                                      <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Please contact</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p class="text-center"><strong>Cell No: </strong> <u>+8801000000001</u></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thank you !</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rounded">
+                        <div class="card border-0 h-100 rounded p-2">
+                            <div class="p-2 rounded">
+                                <img src="images/shoes-4.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Sneakers Skate Shoe </h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-3">
+                                <button class="rounded" aria-current="false"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-purchase"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal-purchase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModal-purchase" aria-hidden="true">
+                                    <div class="modal-dialog overflow: hidden">
+                                      <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Please contact</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        <div class="modal-body overflow-y: hidden">
+                                            <p class="text-center"><strong>Cell No: </strong> <u>+8801000000001</u></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thank you !</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+
+        <!-- Subscribe Section -->
+        <section class="mt-5 p-5">
+            <div class="container">
+                <h2 class="text-center">
+                    <span class="text-lg">Subscribe</span> to get more informations, <br> latest news and other interesting offers.
+                </h2>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <span class="input-group-btn">
+                    <button class="rounded" type="submit">Subscribe</button>
+                    </span>
+                </div>
+           </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <form class="container mt-5 p-5" id="contact">
+            <h1 class="text-center"><span>Contact</span></h1>
+            <div class="rectangle rounded"></div>
+
+            <!-- Name input -->
+            <div class="form-outline mb-4 ">
+                <input type="text" id="form4Example1" class="form-control" placeholder="Name" required/>
+            </div>
+          
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="email" id="form4Example2" class="form-control " placeholder="email" required/>
+            </div>
+          
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+                <textarea class="form-control border border-success" id="form4Example3" rows="4" placeholder="Write your Message" required></textarea>
+            </div>
+          
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+                <input
+                    class="form-check-input me-2"
+                    type="checkbox"
+                    value=""
+                    id="form4Example4"
+                    checked
+                />
+                <label class="form-check-label" for="form4Example4">
+                        Send me a copy of this message
+                </label>
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+        </form>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="text-center text-dark p-2">Copyright © <strong>পায়ে পায়ে</strong> </p>
+        </div>
+    </footer>   
+    <!-- Js Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
